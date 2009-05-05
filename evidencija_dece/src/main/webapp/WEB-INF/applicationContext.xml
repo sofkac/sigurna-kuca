@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd"
+       default-lazy-init="true">
+
+    <!--TimDao-START-->
+    <bean id="timDao" class="ftn.edu.ais.dao.hibernate.TimDaoHibernate">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+    <!--TimDao-END-->
+
+    <!--KategorijaDao-START-->
+    <bean id="kategorijaDao" class="ftn.edu.ais.dao.hibernate.KategorijaDaoHibernate">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+    <!--KategorijaDao-END-->
+
+    <!--HraniteljskaPorodicaDao-START-->
+    <bean id="hraniteljskaPorodicaDao" class="ftn.edu.ais.dao.hibernate.HraniteljskaPorodicaDaoHibernate">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+    <!--HraniteljskaPorodicaDao-END-->
+
+    <!--DeteDao-START-->
+    <bean id="deteDao" class="ftn.edu.ais.dao.hibernate.DeteDaoHibernate">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+    <!--DeteDao-END-->
+
+    <!-- Add new DAOs here -->
+
+    <!--TimManager-START-->
+    <bean id="timManager" class="ftn.edu.ais.service.impl.TimManagerImpl">
+        <constructor-arg ref="timDao"/>
+    </bean>
+    <!--TimManager-END-->
+
+    <!--KategorijaManager-START-->
+    <bean id="kategorijaManager" class="ftn.edu.ais.service.impl.KategorijaManagerImpl">
+        <constructor-arg ref="kategorijaDao"/>
+    </bean>
+    <!--KategorijaManager-END-->
+
+    <!--HraniteljskaPorodicaManager-START-->
+    <bean id="hraniteljskaPorodicaManager" class="ftn.edu.ais.service.impl.HraniteljskaPorodicaManagerImpl">
+        <constructor-arg ref="hraniteljskaPorodicaDao"/>
+    </bean>
+    <!--HraniteljskaPorodicaManager-END-->
+
+    <!--DeteManager-START-->
+    <bean id="deteManager" class="ftn.edu.ais.service.impl.DeteManagerImpl">
+        <constructor-arg ref="deteDao"/>
+    </bean>
+    <!--DeteManager-END-->
+
+    <!-- Add new Managers here -->
+
+    <!-- Add new Actions here -->
+</beans>

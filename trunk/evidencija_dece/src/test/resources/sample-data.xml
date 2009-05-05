@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    <table name="app_user">
+        <column>id</column>
+        <column>username</column>
+        <column>password</column>
+        <column>first_name</column>
+        <column>last_name</column>
+        <column>address</column>
+        <column>city</column>
+        <column>country</column>
+        <column>email</column>
+        <column>phone_number</column>
+        <column>postal_code</column>
+        <column>province</column>
+        <column>website</column>
+        <column>password_hint</column>
+        <column>version</column>
+        <column>account_enabled</column>
+        <column>account_expired</column>
+        <column>account_locked</column>
+        <column>credentials_expired</column>
+        <row>
+            <value description="id">-1</value>
+            <value description="username">user</value>
+            <value description="password">12dea96fec20593566ab75692c9949596833adc9</value>
+            <value description="first_name">Tomcat</value>
+            <value description="last_name">User</value>
+            <value description="address"></value>
+            <value description="city">Denver</value>
+            <value description="country">US</value>
+            <value description="email">matt_raible@yahoo.com</value>
+            <value description="phone_number"></value>
+            <value description="postal_code">80210</value>
+            <value description="province">CO</value>
+            <value description="website">http://tomcat.apache.org</value>
+            <value description="password_hint"><![CDATA[A male kitty.]]></value>
+            <value description="version">1</value>
+            <value description="account_enabled">1</value>
+            <value description="account_expired">0</value>
+            <value description="account_locked">0</value>
+            <value description="credentials_expired">0</value>
+        </row>
+        <row>
+            <value description="id">-2</value>
+            <value description="username">admin</value>
+            <value description="password">d033e22ae348aeb5660fc2140aec35850c4da997</value>
+            <value description="first_name">Matt</value>
+            <value description="last_name">Raible</value>
+            <value description="address"></value>
+            <value description="city">Denver</value>
+            <value description="country">US</value>
+            <value description="email">matt@raibledesigns.com</value>
+            <value description="phone_number"></value>
+            <value description="postal_code">80210</value>
+            <value description="province">CO</value>
+            <value description="website">http://raibledesigns.com</value>
+            <value description="password_hint"><![CDATA[Not a female kitty.]]></value>
+            <value description="version">1</value>
+            <value description="account_enabled">1</value>
+            <value description="account_expired">0</value>
+            <value description="account_locked">0</value>
+            <value description="credentials_expired">0</value>
+        </row>
+    </table>
+    <table name="role">
+        <column>id</column>
+        <column>name</column>
+        <column>description</column>
+        <row>
+            <value description="id">-1</value>
+            <value description="name">ROLE_ADMIN</value>
+            <value description="description"><![CDATA[Administrator role (can edit Users)]]></value>
+        </row>
+        <row>
+            <value description="id">-2</value>
+            <value description="name">ROLE_USER</value>
+            <value description="description"><![CDATA[Default role for all Users]]></value>
+        </row>
+    </table>
+    <table name="user_role">
+        <column>user_id</column>
+        <column>role_id</column>
+        <row>
+            <value description="user_id">-1</value>
+            <value description="role_id">-2</value>
+        </row>
+        <row>
+            <value description="user_id">-2</value>
+            <value description="role_id">-1</value>
+        </row>
+    </table>
+    <!--Tim-START-->
+    <table name="tim">
+        <column>idt</column>
+        <column>napomenat</column>
+        <column>nazt</column>
+        <column>opist</column>
+    <row>
+        <value description="idt">-1</value>
+        <value description="napomenat">PgUnVeRzGoNgVlQlQmLfKbEfDmHmKyLuRxCuVySuPpGeAuWaPp</value>
+        <value description="nazt">CaKuKvRvLgRmIqZnTqXkFzStXfYrWn</value>
+        <value description="opist">RlEuGsYaTlHvRfWwDoXsHbNbAeGfXqErIcEyAoMvHcCtNlZfLp</value>
+    </row>
+    <row>
+        <value description="idt">-2</value>
+        <value description="napomenat">XmXdCeBxBrKcLiBcLdSwNfWbUyArMbFdCgJrQvGkRgRhPoVmGv</value>
+        <value description="nazt">JuXaTiJdIxZjEtHyFjVaXxWeRkQrRx</value>
+        <value description="opist">GrKnMbZwDmCtIbLlEmMeUiTxZcZfFlPkDoKuWrZzRrOdXfEgBd</value>
+    </row>
+    <row>
+        <value description="idt">-3</value>
+        <value description="napomenat">LyOpFqAeInDuRsJpXkVdZkOxAbJbEaAoSeAqLePhBhIpLpQpRo</value>
+        <value description="nazt">RtHzSkPtVsEsAhMgRhHkLtAtTwNwVq</value>
+        <value description="opist">YyUyDiSeExWmQkLqCsJpQpRySzAwMbBvGfQqLbUuPeDkUiAmSb</value>
+    </row>
+    </table>
+    <!--Tim-END-->
+    <!--Kategorija-START-->
+    <table name="kategorija">
+        <column>idk</column>
+        <column>nazk</column>
+    <row>
+        <value description="idk">-1</value>
+        <value description="nazk">LmSpNqQhXvZsDkVaKtBxCu</value>
+    </row>
+    <row>
+        <value description="idk">-2</value>
+        <value description="nazk">OzVzFkIqCoIuOfAkUgBnOr</value>
+    </row>
+    <row>
+        <value description="idk">-3</value>
+        <value description="nazk">EoRuSeJyYrYuWbFcRkYeBa</value>
+    </row>
+    </table>
+    <!--Kategorija-END-->
+    <!--HraniteljskaPorodica-START-->
+    <table name="hraniteljska_porodica">
+        <column>brlkh</column>
+        <column>adrh</column>
+        <column>gradh</column>
+        <column>imeh</column>
+        <column>jmbh</column>
+        <column>przh</column>
+        <column>telh</column>
+        <column>ziph</column>
+    <row>
+        <value description="brlkh">-1</value>
+        <value description="adrh">VjPkMmDfCtIwPmArVgKyNtUaLdUnThSbDbPoYeUmLvDfLfBcKc</value>
+        <value description="gradh">ThKuMyUhLyLrNmCnXfGq</value>
+        <value description="imeh">VqXrIjDqYfWzYsQgOkHk</value>
+        <value description="jmbh">6277207925701860352</value>
+        <value description="przh">WcOwMnVrVxDcGdLjErMk</value>
+        <value description="telh">KsUkXeAzVcStLpH</value>
+        <value description="ziph">JfUyKkApHv</value>
+    </row>
+    <row>
+        <value description="brlkh">-2</value>
+        <value description="adrh">NdBrXxCaOqLeKvNcUaQcSsNkHpPvObOyCcYnZpYmLpZiKcWvJp</value>
+        <value description="gradh">MnWxCrWxQyRxWpRgOzOm</value>
+        <value description="imeh">VwObPmPeTwOfXkFpBvUw</value>
+        <value description="jmbh">7890316901079001088</value>
+        <value description="przh">NjXeWfDdEvFnKfRsJgLp</value>
+        <value description="telh">XiQaZyGqBuQxRiU</value>
+        <value description="ziph">ItQoQgCsAn</value>
+    </row>
+    <row>
+        <value description="brlkh">-3</value>
+        <value description="adrh">DhEvTdHtPfIkSdPpLiLiByReMjSiGwVzWmUkQcBeLsDpTuXhRu</value>
+        <value description="gradh">UcIlLqHkKcYqUiMvNjFw</value>
+        <value description="imeh">WvEnZePpMdRcGnRfZlXr</value>
+        <value description="jmbh">4838324710970384384</value>
+        <value description="przh">EoGzPpAqZiCyRbBoUsZk</value>
+        <value description="telh">XcQmEkMmZcCvMxY</value>
+        <value description="ziph">YfQsEvFbKd</value>
+    </row>
+    </table>
+    <!--HraniteljskaPorodica-END-->
+    <!--Dete-START-->
+    <table name="dete">
+        <column>idde</column>
+        <column>brlkh</column>    
+        <column>imede</column>
+        <column>jmbde</column>
+        <column>idk</column>    
+        <column>przde</column>
+        <column>idt</column>    
+    <row>
+        <value description="idde">-1</value>
+        <value description="brlkh">-1</value>
+        <value description="imede">LzHqBlPeCrSpWoOnXbVt</value>
+        <value description="jmbde">6088996137304022016</value>
+        <value description="idk">-1</value>
+        <value description="przde">WwMoCiAfVuAoQsIwYkBz</value>
+        <value description="idt">-1</value>
+    </row>
+    <row>
+        <value description="idde">-2</value>
+        <value description="brlkh">-2</value>
+        <value description="imede">RrXjCwSrHlIvDtGuJrAb</value>
+        <value description="jmbde">4480335127027008512</value>
+        <value description="idk">-2</value>
+        <value description="przde">HxFtMfRwKvAgBaXpGrXq</value>
+        <value description="idt">-2</value>
+    </row>
+    <row>
+        <value description="idde">-3</value>
+        <value description="brlkh">-3</value>
+        <value description="imede">ErRuQyDiQdEbRsWcLtYi</value>
+        <value description="jmbde">512289145100213248</value>
+        <value description="idk">-3</value>
+        <value description="przde">OvGjTuMaFzDnRfMkGpPy</value>
+        <value description="idt">-3</value>
+    </row>
+    </table>
+    <!--Dete-END-->
+</dataset>
+
+
+

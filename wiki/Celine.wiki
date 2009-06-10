@@ -1,24 +1,19 @@
 Frameworks
-
-    * Hibernate
-    * Spring
-    * Struts2
+    * <font color="blue">Hibernate</font>
+    * <font color="blue">Spring</font>
+    * <font color="blue">Struts2</font>
     * AJAX
-    * Test frameworks
+    * <font color="blue">Test frameworks</font>
           o JUnit
           o Canoo Web Test 
     * Jasper Reports 
-
 Development Environment
-
-    * Java v1.6
+    * Java v1.5
     * DB - MySQL v5.1.32
-    * maven
-    * SVN
-    * Eclipse 
-
-J2EE Architecture, layers
-
+    * <font color="blue">maven</font>
+    * <font color="blue">SVN</font>
+    * <font color="blue">Eclipse</font>
+=<font color="red">J2EE Architecture</font>, layers=
     * POJO
     * Persistance
           o DAO pattern 

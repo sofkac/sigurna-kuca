@@ -1,0 +1,29 @@
+Frameworks
+
+    * Hibernate
+    * Spring
+    * Struts2
+    * AJAX
+    * Test frameworks
+          o JUnit
+          o Canoo Web Test 
+    * Jasper Reports 
+
+Development Environment
+
+    * Java v1.6
+    * DB - MySQL v5.1.32
+    * maven
+    * SVN
+    * Eclipse 
+
+J2EE Architecture, layers
+
+    * POJO
+    * Persistance
+          o DAO pattern 
+    * Business layer, service
+          o Managers
+          o Web services 
+    * Presentation, web layer
+          o MVC pattern

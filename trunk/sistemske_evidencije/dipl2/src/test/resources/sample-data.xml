@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    <table name="app_user">
+        <column>id</column>
+        <column>username</column>
+        <column>password</column>
+        <column>first_name</column>
+        <column>last_name</column>
+        <column>address</column>
+        <column>city</column>
+        <column>country</column>
+        <column>email</column>
+        <column>phone_number</column>
+        <column>postal_code</column>
+        <column>province</column>
+        <column>website</column>
+        <column>password_hint</column>
+        <column>version</column>
+        <column>account_enabled</column>
+        <column>account_expired</column>
+        <column>account_locked</column>
+        <column>credentials_expired</column>
+        <row>
+            <value description="id">-1</value>
+            <value description="username">user</value>
+            <value description="password">12dea96fec20593566ab75692c9949596833adc9</value>
+            <value description="first_name">Tomcat</value>
+            <value description="last_name">User</value>
+            <value description="address"></value>
+            <value description="city">Denver</value>
+            <value description="country">US</value>
+            <value description="email">matt_raible@yahoo.com</value>
+            <value description="phone_number"></value>
+            <value description="postal_code">80210</value>
+            <value description="province">CO</value>
+            <value description="website">http://tomcat.apache.org</value>
+            <value description="password_hint"><![CDATA[A male kitty.]]></value>
+            <value description="version">1</value>
+            <value description="account_enabled">1</value>
+            <value description="account_expired">0</value>
+            <value description="account_locked">0</value>
+            <value description="credentials_expired">0</value>
+        </row>
+        <row>
+            <value description="id">-2</value>
+            <value description="username">admin</value>
+            <value description="password">d033e22ae348aeb5660fc2140aec35850c4da997</value>
+            <value description="first_name">Matt</value>
+            <value description="last_name">Raible</value>
+            <value description="address"></value>
+            <value description="city">Denver</value>
+            <value description="country">US</value>
+            <value description="email">matt@raibledesigns.com</value>
+            <value description="phone_number"></value>
+            <value description="postal_code">80210</value>
+            <value description="province">CO</value>
+            <value description="website">http://raibledesigns.com</value>
+            <value description="password_hint"><![CDATA[Not a female kitty.]]></value>
+            <value description="version">1</value>
+            <value description="account_enabled">1</value>
+            <value description="account_expired">0</value>
+            <value description="account_locked">0</value>
+            <value description="credentials_expired">0</value>
+        </row>
+    </table>
+    <table name="role">
+        <column>id</column>
+        <column>name</column>
+        <column>description</column>
+        <row>
+            <value description="id">-1</value>
+            <value description="name">ROLE_ADMIN</value>
+            <value description="description"><![CDATA[Administrator role (can edit Users)]]></value>
+        </row>
+        <row>
+            <value description="id">-2</value>
+            <value description="name">ROLE_USER</value>
+            <value description="description"><![CDATA[Default role for all Users]]></value>
+        </row>
+    </table>
+    <table name="user_role">
+        <column>user_id</column>
+        <column>role_id</column>
+        <row>
+            <value description="user_id">-1</value>
+            <value description="role_id">-2</value>
+        </row>
+        <row>
+            <value description="user_id">-2</value>
+            <value description="role_id">-1</value>
+        </row>
+    </table>
+    <!--Tim-START-->
+    <table name="tim">
+        <column>idt</column>
+        <column>napomenat</column>
+        <column>nazt</column>
+        <column>opist</column>
+    <row>
+        <value description="idt">-1</value>
+        <value description="napomenat">Zaduzen za decu iz soba 1 i 2.</value>
+        <value description="nazt">Tim 3</value>
+        <value description="opist">2 soc. radnika i psiholog</value>
+    </row>
+    <row>
+        <value description="idt">-2</value>
+        <value description="napomenat">Zaduzen za decu iz sobe 3.</value>
+        <value description="nazt">Tim 4</value>
+        <value description="opist">NeHaNtGsKcLoOqNeSqAhAkPpAqX</value>
+    </row>
+    <row>
+        <value description="idt">-3</value>
+        <value description="napomenat">Zaduzen za decu iz soba 5 i 7.</value>
+        <value description="nazt">Tim5</value>
+        <value description="opist">socijalni radnik, pravnik</value>
+    </row>
+    </table>
+    <!--Tim-END-->
+    <!--Zanimanje-START-->
+    <table name="zanimanje">
+        <column>idzan</column>
+        <column>napomena</column>
+        <column>nazzan</column>
+        <column>opis</column>
+    <row>
+        <value description="idzan">-1</value>
+        <value description="napomena">nema</value>
+        <value description="nazzan">pedagog</value>
+        <value description="opis">pedagog</value>
+    </row>
+    <row>
+        <value description="idzan">-2</value>
+        <value description="napomena">nema</value>
+        <value description="nazzan">socijalni radnik</value>
+        <value description="opis">socijalni radnik</value>
+    </row>
+    <row>
+        <value description="idzan">-3</value>
+        <value description="napomena">nema</value>
+        <value description="nazzan">pravnik</value>
+        <value description="opis">pravnik</value>
+    </row>
+    </table>
+    <!--Zanimanje-END-->
+    <!--Zaposleni-START-->
+    <table name="zaposleni">
+        <column>idz</column>
+        <column>adrz</column>
+        <column>gradz</column>
+        <column>imez</column>
+        <column>jmbz</column>
+        <column>mailz</column>
+        <column>przz</column>
+        <column>telz</column>
+        <column>idzan</column>    
+        <column>zipz</column>
+    <row>
+        <value description="idz">-1</value>
+        <value description="adrz">Puskinova 32</value>
+        <value description="gradz">Novi Sad</value>
+        <value description="imez">Nada</value>
+        <value description="jmbz">67584909999</value>
+        <value description="mailz">nada@gmail.com</value>
+        <value description="przz">Kovac</value>
+        <value description="telz">021212121</value>
+        <value description="idzan">-1</value>
+        <value description="zipz">21000</value>
+    </row>
+    <row>
+        <value description="idz">-2</value>
+        <value description="adrz">M. Dimitrijevica 12/24</value>
+        <value description="gradz">Novi Sad</value>
+        <value description="imez">Jelena</value>
+        <value description="jmbz">22113456789</value>
+        <value description="mailz">jelena@hotmail.com</value>
+        <value description="przz">Sic</value>
+        <value description="telz">0213456789</value>
+        <value description="idzan">-2</value>
+        <value description="zipz">21000</value>
+    </row>
+    <row>
+        <value description="idz">-3</value>
+        <value description="adrz">Dunavska 45/9</value>
+        <value description="gradz">Novi Sad</value>
+        <value description="imez">Marko</value>
+        <value description="jmbz">2345654908</value>
+        <value description="mailz">marko@gmail.com</value>
+        <value description="przz">Jaksic</value>
+        <value description="telz">054545454</value>
+        <value description="idzan">-3</value>
+        <value description="zipz">21000</value>
+    </row>
+    </table>
+    <!--Zaposleni-END-->
+    <!--Pripada-START-->
+    <table name="pripada">
+        <column>idp</column>
+        <column>brlj</column>
+        <column>idt</column>    
+        <column>idzan</column>    
+    <row>
+        <value description="idp">-1</value>
+        <value description="brlj">4</value>
+        <value description="idt">-1</value>
+        <value description="idzan">-1</value>
+    </row>
+    <row>
+        <value description="idp">-2</value>
+        <value description="brlj">5</value>
+        <value description="idt">-2</value>
+        <value description="idzan">-2</value>
+    </row>
+    <row>
+        <value description="idp">-3</value>
+        <value description="brlj">3</value>
+        <value description="idt">-3</value>
+        <value description="idzan">-3</value>
+    </row>
+    </table>
+    <!--Pripada-END-->
+    <!--Kategorija-START-->
+    <table name="kategorija">
+        <column>idk</column>
+        <column>nazk</column>
+        <column>opisk</column>
+    <row>
+        <value description="idk">-1</value>
+        <value description="nazk">sigurne kuce</value>
+        <value description="opisk">deca smestaja</value>
+    </row>
+    <row>
+        <value description="idk">-2</value>
+        <value description="nazk">materijalno ugrozena</value>
+        <value description="opisk">materijalno ugrozena</value>
+    </row>
+    <row>
+        <value description="idk">-3</value>
+        <value description="nazk">hraniteljske porodice</value>
+        <value description="opisk">dete kod hranitelja</value>
+    </row>
+    </table>
+    <!--Kategorija-END-->
+    <!--HraniteljskaPorodica-START-->
+    <table name="hraniteljska_porodica">
+        <column>brlkh</column>
+        <column>adrh</column>
+        <column>gradh</column>
+        <column>imeh</column>
+        <column>jmbh</column>
+        <column>przh</column>
+        <column>telh</column>
+        <column>ziph</column>
+    <row>
+        <value description="brlkh">-1</value>
+        <value description="adrh">Puskinova 22</value>
+        <value description="gradh">Zabalj</value>
+        <value description="imeh">Jovana</value>
+        <value description="jmbh">1234565432123</value>
+        <value description="przh">Babic</value>
+        <value description="telh">021232312</value>
+        <value description="ziph">21000</value>
+    </row>
+    <row>
+        <value description="brlkh">-2</value>
+        <value description="adrh">Dunavska 5</value>
+        <value description="gradh">Novi Sad</value>
+        <value description="imeh">Nikola</value>
+        <value description="jmbh">0989098767876</value>
+        <value description="przh">Novak</value>
+        <value description="telh">02123456</value>
+        <value description="ziph">21000</value>
+    </row>
+    <row>
+        <value description="brlkh">-3</value>
+        <value description="adrh">Tolstojeva</value>
+        <value description="gradh">Zrenjanin</value>
+        <value description="imeh">Kaca</value>
+        <value description="jmbh">3432156789098</value>
+        <value description="przh">Simic</value>
+        <value description="telh">023456789</value>
+        <value description="ziph">23000</value>
+    </row>
+    </table>
+    <!--HraniteljskaPorodica-END-->
+    <!--Dete-START-->
+    <table name="dete">
+        <column>idde</column>
+        <column>adrr</column>
+        <column>drde</column>
+        <column>gradr</column>
+        <column>brlkh</column>    
+        <column>imede</column>
+        <column>imer</column>
+        <column>jmbde</column>
+        <column>jmbr</column>
+        <column>idk</column>    
+        <column>przde</column>
+        <column>przr</column>
+        <column>telr</column>
+        <column>idt</column>    
+        <column>zipr</column>
+    <row>
+        <value description="idde">-1</value>
+        <value description="adrr">nepoznata</value>
+        <value description="drde">2009-06-08</value>
+        <value description="gradr">nepoznat</value>
+        <value description="brlkh">-1</value>
+        <value description="imede">Janko</value>
+        <value description="imer">nepoznato</value>
+        <value description="jmbde">2345678654321</value>
+        <value description="jmbr">nepoznat</value>
+        <value description="idk">-1</value>
+        <value description="przde">Kovac</value>
+        <value description="przr">nepoznato</value>
+        <value description="telr">nepoznat</value>
+        <value description="idt">-1</value>
+        <value description="zipr">nepoznat</value>
+    </row>
+    <row>
+        <value description="idde">-2</value>
+        <value description="adrr">Sekspirova 23</value>
+        <value description="drde">2009-06-08</value>
+        <value description="gradr">Novi Sad</value>
+        <value description="brlkh">-2</value>
+        <value description="imede">Maja</value>
+        <value description="imer">Jelena</value>
+        <value description="jmbde">1234567876543</value>
+        <value description="jmbr">0987890987123</value>
+        <value description="idk">-2</value>
+        <value description="przde">Krstic</value>
+        <value description="przr">Krstic</value>
+        <value description="telr">021232323</value>
+        <value description="idt">-2</value>
+        <value description="zipr">21000</value>
+    </row>
+    <row>
+        <value description="idde">-3</value>
+        <value description="adrr">Kosovska</value>
+        <value description="drde">2009-06-08</value>
+        <value description="gradr">Zrenjanin</value>
+        <value description="brlkh">-3</value>
+        <value description="imede">Lana</value>
+        <value description="imer">Jovanka</value>
+        <value description="jmbde">234561245671</value>
+        <value description="jmbr">0981234856712</value>
+        <value description="idk">-3</value>
+        <value description="przde">Jokiv</value>
+        <value description="przr">Jokic</value>
+        <value description="telr">02343212</value>
+        <value description="idt">-3</value>
+        <value description="zipr">23000</value>
+    </row>
+    </table>
+    <!--Dete-END-->
+    <!--Angazovan-START-->
+    <table name="angazovan">
+        <column>ida</column>
+        <column>data</column>
+        <column>idp</column>    
+        <column>idz</column>    
+    <row>
+        <value description="ida">-1</value>
+        <value description="Datum">2009-06-11</value>
+        <value description="idp">-1</value>
+        <value description="idz">-1</value>
+    </row>
+    <row>
+        <value description="ida">-2</value>
+        <value description="Datum">2009-06-30</value>
+        <value description="idp">-2</value>
+        <value description="idz">-2</value>
+    </row>
+    <row>
+        <value description="ida">-3</value>
+        <value description="Datum">2009-06-12</value>
+        <value description="idp">-3</value>
+        <value description="idz">-3</value>
+    </row>
+    </table>
+    <!--Angazovan-END-->
+</dataset>
+
+
+
+
+
+
+

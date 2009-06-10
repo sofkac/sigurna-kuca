@@ -9,7 +9,7 @@
 == Business ==
     * Development
       * Generating Managers
-      * <font color="red">Generating Web Service</font>
+      * <font color="blue">Generating Web Service</font>
     * Additiona logic
       * provera stanja robe prilikom pravljenja fakture
       * skidanje kolicine prilikom kreiranja fakture

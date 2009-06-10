@@ -13,7 +13,7 @@ Development Environment
     * <font color="blue">maven</font>
     * <font color="blue">SVN</font>
     * <font color="blue">Eclipse</font>
-=<font color="red">J2EE Architecture</font>, layers=
+=<font color="blue">J2EE Architecture</font>, layers=
     * POJO
     * Persistance
           o DAO pattern 

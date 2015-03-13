@@ -1,0 +1,1 @@
+Aplikacija dela informacionog sistema "Sigurna kuca"
